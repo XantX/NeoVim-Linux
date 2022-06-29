@@ -1,4 +1,5 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
+		Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
     "Syntac suport
 		Plug 'nvim-treesitter/nvim-treesitter', {'do':'TSUpdate'}
 		"Plug 'nvim-treesitter/playground'

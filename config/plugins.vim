@@ -38,6 +38,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 		Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 		Plug 'honza/vim-snippets'
 		Plug 'mlaursen/vim-react-snippets'
+		Plug 'cristianoliveira/vim-react-html-snippets'
 		"React and javascript Plugins
 		Plug 'ianks/vim-tsx'
 		Plug 'mxw/vim-jsx'

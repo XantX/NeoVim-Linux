@@ -22,7 +22,8 @@ nmap <Leader>P :BufferPin<CR>
 nmap <Leader>B :BufferPick<CR>
 nmap <Leader>e :BufferClose<CR>
 "LSP config mapping
-nmap <Leader>r <cmd>lua vim.lsp.buf.rename()<CR>
+"nmap <Leader>r <cmd>lua vim.lsp.buf.rename()<CR>
+nmap <Leader>r <cmd>Lspsaga rename<CR>
 "nmap <Leader>a <cmd>lua vim.lsp.buf.code_action()<CR>
 nmap <Leader>a <cmd>Lspsaga code_action<CR>
 nnoremap <silent>gD <cmd> lua vim.lsp.buf.declaration()<CR>

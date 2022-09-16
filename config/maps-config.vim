@@ -21,6 +21,16 @@ nmap <Leader>mp :BufferMovePrevious<CR>
 nmap <Leader>P :BufferPin<CR>
 nmap <Leader>B :BufferPick<CR>
 nmap <Leader>e :BufferClose<CR>
+"LSP config mapping
+nmap <Leader>r <cmd>lua vim.lsp.buf.rename()<CR>
+nmap <Leader>a <cmd>lua vim.lsp.buf.code_action()<CR>
+nnoremap <silent>gD <cmd> lua vim.lsp.buf.declaration()<CR>
+nnoremap <silent>gd <cmd> lua vim.lsp.buf.definition()<CR>
+nnoremap <silent>gi <cmd> lua vim.lsp.buf.implementation()<CR>
+nnoremap <silent>gr <cmd> lua vim.lsp.buf.references()<CR>
+"nnoremap <silent>K <cmd> lua vim.lsp.buf.hover()<CR>
+nnoremap <silent>K <cmd> lua vim.lsp.buf.signature_help()<CR>
+nmap <Leader>f <cmd> lua vim.lsp.buf.formatting()<CR>
 "Configuracion
 nmap <Leader>rc :e ~/.config/nvim/init.vim <CR>
 "To map <Esc> to exit terminal-mode:

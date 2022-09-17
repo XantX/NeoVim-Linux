@@ -29,6 +29,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 			Plug 'neovim/nvim-lspconfig'
 			Plug 'williamboman/nvim-lsp-installer'
 		endif
+		Plug 'lewis6991/gitsigns.nvim'
+		Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+		Plug 'nvim-lua/plenary.nvim'
+		Plug 'folke/lsp-colors.nvim'
 		Plug 'glepnir/lspsaga.nvim'
 		Plug 'hrsh7th/cmp-nvim-lsp'
 		Plug 'hrsh7th/cmp-buffer'

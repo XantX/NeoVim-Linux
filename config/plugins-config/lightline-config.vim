@@ -25,21 +25,26 @@ endfunction
 function! GitChangeStatusLine()
       return sy#repo#get_stats_decorated()
 endfunction
+function! GitStatus()
+			let line = get(b:,'gitsigns_status','')
+			return line 
+endfunction
 
 let g:lightline = {
       \ 'colorscheme': 'gruvbox',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch','gitchanges','readonly', 'modified','coc-status'] ],
+      \             [ 'gitbranch','git-status','readonly', 'modified','coc-status'] ],
       \   'right': [ ['lineinfo' ],[  'filetype','fileformat'] ]
       \ },
       \ 'component': {
-      \   'git-logo-test': ''
+      \   'git-logo-test': '',
       \ },
       \ 'component_function': {
-      \ 'gitbranch': 'LightlineFugitive',
-      \ 'filetype': 'MyFiletype',
-      \ 'fileformat': 'MyFileformat',
-      \ 'coc-status': 'coc#status'
+			\		'gitbranch': 'LightlineFugitive',
+			\		'filetype': 'MyFiletype',
+			\		'fileformat': 'MyFileformat',
+			\		'coc-status': 'coc#status',
+			\		'git-status': 'GitStatus'
       \ },
       \ }

@@ -26,6 +26,7 @@ set nowrap
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
+set autochdir
 
 source $HOME/.config/nvim/config/plugins.vim
 source $HOME/.config/nvim/config/maps-config.vim

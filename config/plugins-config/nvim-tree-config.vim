@@ -15,7 +15,13 @@ lua << EOF
         remove_file = {
           close_window = true,
         },
-		},
+			},
+
+      git = {
+        enable = true,
+        ignore = false,
+        show_on_dirs = true,
+      },
     } -- END_DEFAULT_OPTS
 
 EOF

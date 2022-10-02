@@ -13,6 +13,7 @@ nnoremap <M-h> :vertical resize -2<CR>
 nnoremap <M-l> :vertical resize +2<CR>
 "Open file explorer
 nmap <Leader>nt :NvimTreeToggle<CR>
+nmap <Leader>nft :NvimTreeFindFileToggle<CR>
 "movimiento entre buffers
 nmap <Leader>ne :BufferNext<CR>
 nmap <Leader>pe :BufferPrevious<CR>
